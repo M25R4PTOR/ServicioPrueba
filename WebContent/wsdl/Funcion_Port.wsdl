@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://www.examples.com/wsdl/WSPractica.wsdl" xmlns:intf="http://www.examples.com/wsdl/WSPractica.wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.examples.com/wsdl/WSPractica.wsdl">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+
+   <wsdl:message name="Funcion2Request">
+
+      <wsdl:part name="param1" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="Funcion1Request">
+
+      <wsdl:part name="param1" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="Funcion2Response">
+
+      <wsdl:part name="resp1" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="Funcion1Response">
+
+      <wsdl:part name="resp1" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+   
+   <wsdl:message name="Funcion3Request">
+
+      <wsdl:part name="param1" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+   
+   <wsdl:message name="Funcion3Response">
+
+      <wsdl:part name="resp1" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+   
+   <wsdl:message name="Funcion4Request">
+
+      <wsdl:part name="param1" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+   
+   <wsdl:message name="Funcion4Response">
+
+      <wsdl:part name="resp1" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Funcion_PortType">
+
+      <wsdl:operation name="Funcion1" parameterOrder="param1">
+
+         <wsdl:input message="impl:Funcion1Request" name="Funcion1Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:Funcion1Response" name="Funcion1Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="Funcion2" parameterOrder="param1">
+
+         <wsdl:input message="impl:Funcion2Request" name="Funcion2Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:Funcion2Response" name="Funcion2Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+	  
+	  <wsdl:operation name="Funcion3" parameterOrder="param1">
+
+         <wsdl:input message="impl:Funcion3Request" name="Funcion3Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:Funcion3Response" name="Funcion3Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+	  
+	  <wsdl:operation name="Funcion4" parameterOrder="param1">
+
+         <wsdl:input message="impl:Funcion4Request" name="Funcion4Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:Funcion4Response" name="Funcion4Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="Funcion_PortSoapBinding" type="impl:Funcion_PortType">
+
+      <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="Funcion1">
+
+         <wsdlsoap:operation soapAction="Funcion1"/>
+
+         <wsdl:input name="Funcion1Request">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:examples:WSPractica" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="Funcion1Response">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.examples.com/wsdl/WSPractica.wsdl" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="Funcion2">
+
+         <wsdlsoap:operation soapAction="Funcion2"/>
+
+         <wsdl:input name="Funcion2Request">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:examples:WSPractica" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="Funcion2Response">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.examples.com/wsdl/WSPractica.wsdl" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+	  
+	  <wsdl:operation name="Funcion3">
+
+         <wsdlsoap:operation soapAction="Funcion3"/>
+
+         <wsdl:input name="Funcion3Request">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:examples:WSPractica" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="Funcion3Response">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.examples.com/wsdl/WSPractica.wsdl" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="Funcion4">
+
+         <wsdlsoap:operation soapAction="Funcion4"/>
+
+         <wsdl:input name="Funcion4Request">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:examples:WSPractica" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="Funcion4Response">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.examples.com/wsdl/WSPractica.wsdl" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="Funcion_Service">
+
+      <wsdl:port binding="impl:Funcion_PortSoapBinding" name="Funcion_Port">
+
+         <wsdlsoap:address location="http://localhost:8080/ServicioPrueba/services/Funcion_Port"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
